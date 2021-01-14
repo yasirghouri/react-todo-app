@@ -55,8 +55,8 @@ const App = () => {
         </Button>
       </form>
       <ul>
-        {todos.map((todo) => {
-          return <Todo todo={todo} />;
+        {todos.map((todo, idx) => {
+          return <Todo key={idx} todo={todo} />;
         })}
       </ul>
     </div>
